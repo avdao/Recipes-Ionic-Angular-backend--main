@@ -1,0 +1,134 @@
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Recipes.exe
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Recipes.deps.json
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Recipes.runtimeconfig.json
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Recipes.runtimeconfig.dev.json
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Recipes.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Recipes.pdb
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.csproj.AssemblyReference.cache
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.AssemblyInfoInputs.cache
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.AssemblyInfo.cs
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.csproj.CoreCompileInputs.cache
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\staticwebassets\Recipes.StaticWebAssets.Manifest.cache
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.RazorTargetAssemblyInfo.cache
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.csproj.CopyComplete
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.pdb
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.genruntimeconfig.cache
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\APPIT-USER\source\repos\Recipes\Recipes\obj\Debug\netcoreapp3.1\Recipes.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Recipes.exe
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Recipes.deps.json
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Recipes.runtimeconfig.json
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Recipes.runtimeconfig.dev.json
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Recipes.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Recipes.pdb
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.csproj.AssemblyReference.cache
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.AssemblyInfoInputs.cache
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.AssemblyInfo.cs
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.csproj.CoreCompileInputs.cache
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\staticwebassets\Recipes.StaticWebAssets.Manifest.cache
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.RazorTargetAssemblyInfo.cache
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.csproj.CopyComplete
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.dll
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.pdb
+C:\Users\Avdo Dzanic\Downloads\Recipes-Ionic-Angular-backend--main\Recipes-Ionic-Angular-backend--main\Recipes\obj\Debug\netcoreapp3.1\Recipes.genruntimeconfig.cache
