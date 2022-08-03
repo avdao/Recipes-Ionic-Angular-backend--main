@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -19,8 +20,9 @@ namespace Recipes.Models
         }
 
         public virtual DbSet<Recipe> Recipes { get; set; }
+        public virtual DbSet<Ingredient> Ingredients { get; set; }
         public object Recipe { get; internal set; }
-        public object Ingredients { get; internal set; }
+       // public object Ingredients { get; internal set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -58,9 +60,10 @@ namespace Recipes.Models
             {
                 entity.ToTable("Recipes");
                 entity.HasKey(e => e.RecipesId)
+                   
                     .HasName("PK__Recipes__085F53BB08D1C2E0");
                 entity.Property(e => e.RecipesId).HasColumnName("RecipesID");
-
+              
                 entity.Property(e => e.ImageUrl)
                     .HasMaxLength(255)
                     .IsUnicode(false)

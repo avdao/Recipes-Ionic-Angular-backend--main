@@ -64,8 +64,25 @@ namespace Recipes.Services
         }
         public void post(Recipe recipe)
         {
+            
             rc.Recipes.Add(recipe);
             rc.SaveChanges();
+
+
+
+/*
+            foreach (var ingredient in recipe.Ingredients.ToArray())
+            {
+                ingredient.RecipesId = recipe.RecipesId;
+                rc1.Ingredients.Add(ingredient);
+                rc1.SaveChanges();
+
+            }
+*/
+            
+            
+            
+
         }
 
 
