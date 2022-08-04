@@ -45,9 +45,9 @@ namespace Recipes.Controllers
         }
      
         [HttpDelete("{id}")]
-        public void deleteByid(int id)
+        public void deleteRecipe(int id)
         {
-            recipesService.deleteById(id);
+            recipesService.DeleteRecipe(id);
         }
 
         [HttpPost]

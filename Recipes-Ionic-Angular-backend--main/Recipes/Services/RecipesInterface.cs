@@ -11,7 +11,7 @@ namespace Recipes.Services
         public List<Recipe> get(string search="");
    
         public Recipe getById(int id);
-        public void deleteById(int id);
+        public void DeleteRecipe(int id);
     
 
         public void post(Recipe recipe);

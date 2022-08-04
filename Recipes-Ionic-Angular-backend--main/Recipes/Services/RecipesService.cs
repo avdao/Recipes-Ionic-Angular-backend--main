@@ -57,11 +57,19 @@ namespace Recipes.Services
         }
 
 
-        public void deleteById(int id)
+     
+
+
+        public void DeleteRecipe(int id)
         {
-            rc.Recipes.Remove(rc.Recipes.Find(id));
+            foreach (var ingredient in getById(id).Ingredients)
+                rc.Ingredients.Remove(ingredient);
+
+            rc.Recipes.Remove(getById(id));
             rc.SaveChanges();
         }
+
+
         public void post(Recipe recipe)
         {
             
