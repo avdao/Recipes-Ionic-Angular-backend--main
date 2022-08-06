@@ -45,7 +45,7 @@ namespace Recipes.Models
                     .HasColumnType("decimal(18, 0)")
                     .HasColumnName("kolicina");
 
-                entity.Property(e => e.Naziv)
+                entity.Property(e => e.FkNaziv)
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("naziv");
@@ -76,6 +76,9 @@ namespace Recipes.Models
                     .IsUnicode(false)
                     .HasColumnName("title");
                 entity.Property(e => e.KategorijaId).HasColumnName("kategorijaID");
+                entity.Property(e => e.Price)
+                   .HasColumnType("decimal(18, 0)")
+                   .HasColumnName("price");
             });
           
 

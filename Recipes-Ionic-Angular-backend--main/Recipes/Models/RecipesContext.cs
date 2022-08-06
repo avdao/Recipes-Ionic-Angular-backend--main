@@ -19,6 +19,8 @@ namespace Recipes.Models
 
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Ingredient> Ingredients { get; set; }
+        public virtual DbSet<MjerneJedinice> MjerneJedinices { get; set; }
+        public virtual DbSet<Namirnice> Namirnices { get; set; }
         public virtual DbSet<Recipe> Recipes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -49,19 +51,57 @@ namespace Recipes.Models
             {
                 entity.Property(e => e.Id).HasColumnName("id");
 
+                entity.Property(e => e.FkNaziv).HasColumnName("fk_naziv");
+
                 entity.Property(e => e.Kolicina)
                     .HasColumnType("decimal(18, 0)")
                     .HasColumnName("kolicina");
 
-                entity.Property(e => e.Naziv)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("naziv");
+                entity.HasOne(d => d.FkNazivNavigation)
+                    .WithMany(p => p.Ingredients)
+                    .HasForeignKey(d => d.FkNaziv)
+                    .HasConstraintName("FK__Ingredien__fk_na__36B12243");
 
                 entity.HasOne(d => d.Recipes)
                     .WithMany(p => p.Ingredients)
                     .HasForeignKey(d => d.RecipesId)
                     .HasConstraintName("FK__Ingredien__Recip__30F848ED");
+            });
+
+            modelBuilder.Entity<MjerneJedinice>(entity =>
+            {
+                entity.ToTable("MjerneJedinice");
+
+                entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.Jedinica)
+                    .HasMaxLength(2)
+                    .IsUnicode(false)
+                    .HasColumnName("JEDINICA");
+
+                entity.Property(e => e.JedinicaLong)
+                    .HasMaxLength(20)
+                    .IsUnicode(false)
+                    .HasColumnName("JEDINICA_LONG");
+            });
+
+            modelBuilder.Entity<Namirnice>(entity =>
+            {
+                entity.ToTable("Namirnice");
+
+                entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.MjernaJedinica).HasColumnName("mjernaJedinica");
+
+                entity.Property(e => e.Naziv)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("NAZIV");
+
+                entity.HasOne(d => d.MjernaJedinicaNavigation)
+                    .WithMany(p => p.Namirnices)
+                    .HasForeignKey(d => d.MjernaJedinica)
+                    .HasConstraintName("FK__Namirnice__mjern__35BCFE0A");
             });
 
             modelBuilder.Entity<Recipe>(entity =>
@@ -77,6 +117,10 @@ namespace Recipes.Models
                     .HasColumnName("imageUrl");
 
                 entity.Property(e => e.KategorijaId).HasColumnName("kategorijaID");
+
+                entity.Property(e => e.Price)
+                    .HasColumnType("decimal(18, 0)")
+                    .HasColumnName("price");
 
                 entity.Property(e => e.Title)
                     .HasMaxLength(400)

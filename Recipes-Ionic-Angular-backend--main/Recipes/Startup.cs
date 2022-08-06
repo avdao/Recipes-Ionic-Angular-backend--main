@@ -36,6 +36,8 @@ namespace Recipes
             services.AddScoped<RecipesInterface, RecipesService>();
             services.AddScoped<CategoryInterface,CategoryService>();
             services.AddScoped<IngredientsInterface, IngredientsServie>();
+            services.AddScoped<MjerneJediniceInterface, MjerneJediniceService>();
+            services.AddScoped<NamirniceInterface, NamirniceService>();
             services.AddSingleton<ILoggerFactory, LoggerFactory>();
             services.Configure<Recipe>(Configuration);
             services.AddDbContext<RecipeContext>(options => options.UseSqlServer(Configuration.GetConnectionString("RecipeURL")));
