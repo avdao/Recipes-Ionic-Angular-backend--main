@@ -57,7 +57,7 @@ namespace Recipes.Models
                     .HasColumnType("decimal(18, 0)")
                     .HasColumnName("kolicina");
 
-                entity.HasOne(d => d.FkNazivNavigation)
+                entity.HasOne(d => d.FkNazivNavigationId)
                     .WithMany(p => p.Ingredients)
                     .HasForeignKey(d => d.FkNaziv)
                     .HasConstraintName("FK__Ingredien__fk_na__36B12243");
