@@ -1,4 +1,6 @@
-﻿using Recipes.Models;
+﻿using Newtonsoft.Json.Linq;
+using Recipes.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -37,9 +39,23 @@ namespace Recipes.Services
             return rc1.Namirnices.Find(id);
         }
 
-        public void post(Namirnice c)
+        public void post(JObject data)
         {
-            rc1.Namirnices.Add(c);
+
+
+            Skladiste skladiste = new Skladiste
+            {
+                MinKolicina = data["minKolicina"].ToObject<decimal>(),
+                FkNamirniceNavigation = data["data"].ToObject<Namirnice>()
+            };
+           
+
+
+
+            rc1.Skladistes.Add(skladiste);
+            rc1.Namirnices.Add(data["data"].ToObject<Namirnice>());
+
+
             rc1.SaveChanges();
         }
     }

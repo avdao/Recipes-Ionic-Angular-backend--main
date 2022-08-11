@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json.Linq;
 using Recipes.Models;
 using Recipes.Services;
 using System.Collections.Generic;
@@ -9,23 +8,23 @@ namespace Recipes.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class NamirniceController : ControllerBase
+    public class SkladisteUlazController : ControllerBase
     {
 
-        private readonly NamirniceInterface namirnice;
+        private readonly SkladisteUlazInterface namirnice;
 
 
-        public NamirniceController(NamirniceInterface namirnice)
+        public SkladisteUlazController(SkladisteUlazInterface namirnice)
         {
-           this.namirnice = namirnice;
+            this.namirnice = namirnice;
         }
 
 
 
         [HttpGet]
-        public List<Namirnice> get()
+        public List<SkladisteUlaz> get()
         {
-            return namirnice.getAllNamirnice();
+            return namirnice.get();
 
         }
 
@@ -33,25 +32,26 @@ namespace Recipes.Controllers
         [HttpDelete("{id}")]
         public void deleteByid(int id)
         {
-            namirnice.deleteById(id);
+            namirnice.DeleteSkladiste(id);
         }
         [HttpGet("{id}")]
-        public Namirnice getByid(int id)
+        public SkladisteUlaz getByid(int id)
         {
             return namirnice.getById(id);
         }
 
 
         [HttpPost]
-        public void postData(JObject data)
+        public void postData(SkladisteUlaz c)
         {
-            namirnice.post(data);
+            namirnice.post(c);
         }
 
         [HttpPut("{id}")]
-        public void edit(Namirnice c)
+        public void edit(SkladisteUlaz c)
         {
             namirnice.edit(c);
         }
+
     }
 }

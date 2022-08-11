@@ -22,6 +22,8 @@ namespace Recipes.Models
         public virtual DbSet<MjerneJedinice> MjerneJedinices { get; set; }
         public virtual DbSet<Namirnice> Namirnices { get; set; }
         public virtual DbSet<Recipe> Recipes { get; set; }
+        public virtual DbSet<Skladiste> Skladistes { get; set; }
+        public virtual DbSet<SkladisteUlaz> SkladisteUlazs { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -57,7 +59,7 @@ namespace Recipes.Models
                     .HasColumnType("decimal(18, 0)")
                     .HasColumnName("kolicina");
 
-                entity.HasOne(d => d.FkNazivNavigationId)
+                entity.HasOne(d => d.FkNazivNavigation)
                     .WithMany(p => p.Ingredients)
                     .HasForeignKey(d => d.FkNaziv)
                     .HasConstraintName("FK__Ingredien__fk_na__36B12243");
@@ -111,6 +113,11 @@ namespace Recipes.Models
 
                 entity.Property(e => e.RecipesId).HasColumnName("RecipesID");
 
+                entity.Property(e => e.Descriptions)
+                    .HasMaxLength(500)
+                    .IsUnicode(false)
+                    .HasColumnName("descriptions");
+
                 entity.Property(e => e.ImageUrl)
                     .HasMaxLength(400)
                     .IsUnicode(false)
@@ -126,6 +133,51 @@ namespace Recipes.Models
                     .HasMaxLength(400)
                     .IsUnicode(false)
                     .HasColumnName("title");
+            });
+
+            modelBuilder.Entity<Skladiste>(entity =>
+            {
+                entity.ToTable("Skladiste");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.IspodMin)
+                    .IsRequired()
+                    .HasColumnName("ispod_min")
+                    .HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.Kolicina)
+                    .HasColumnType("decimal(18, 0)")
+                    .HasColumnName("kolicina");
+
+                entity.Property(e => e.MinKolicina)
+                    .HasColumnType("decimal(18, 0)")
+                    .HasColumnName("min_kolicina");
+
+                entity.HasOne(d => d.FkNamirniceNavigation)
+                    .WithMany(p => p.Skladistes)
+                    .HasForeignKey(d => d.FkNamirnice)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Skladiste__FkNam__403A8C7D");
+            });
+
+            modelBuilder.Entity<SkladisteUlaz>(entity =>
+            {
+                entity.ToTable("Skladiste_Ulaz");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.DatumUnosa).HasColumnType("datetime");
+
+                entity.Property(e => e.Kolicina)
+                    .HasColumnType("decimal(18, 0)")
+                    .HasColumnName("kolicina");
+
+                entity.HasOne(d => d.FkNamirncieNavigation)
+                    .WithMany(p => p.SkladisteUlazs)
+                    .HasForeignKey(d => d.FkNamirncie)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Skladiste__FkNam__3D5E1FD2");
             });
 
             OnModelCreatingPartial(modelBuilder);

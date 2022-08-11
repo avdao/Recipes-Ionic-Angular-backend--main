@@ -17,6 +17,7 @@ namespace Recipes.Models
         public string ImageUrl { get; set; }
         public int? KategorijaId { get; set; }
         public decimal? Price { get; set; }
+        public string Descriptions { get; set; }
 
         public virtual ICollection<Ingredient> Ingredients { get; set; }
     }

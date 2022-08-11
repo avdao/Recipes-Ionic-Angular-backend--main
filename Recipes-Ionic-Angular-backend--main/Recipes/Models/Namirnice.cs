@@ -10,6 +10,8 @@ namespace Recipes.Models
         public Namirnice()
         {
             Ingredients = new HashSet<Ingredient>();
+            SkladisteUlazs = new HashSet<SkladisteUlaz>();
+            Skladistes = new HashSet<Skladiste>();
         }
 
         public int Id { get; set; }
@@ -18,5 +20,7 @@ namespace Recipes.Models
 
         public virtual MjerneJedinice MjernaJedinicaNavigation { get; set; }
         public virtual ICollection<Ingredient> Ingredients { get; set; }
+        public virtual ICollection<SkladisteUlaz> SkladisteUlazs { get; set; }
+        public virtual ICollection<Skladiste> Skladistes { get; set; }
     }
 }

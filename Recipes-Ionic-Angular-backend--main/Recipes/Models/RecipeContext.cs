@@ -20,6 +20,7 @@ namespace Recipes.Models
         }
 
         public virtual DbSet<Recipe> Recipes { get; set; }
+        public virtual DbSet<Skladiste> Skladistes { get; set; }
         public virtual DbSet<Ingredient> Ingredients { get; set; }
         public object Recipe { get; internal set; }
        // public object Ingredients { get; internal set; }
@@ -48,6 +49,31 @@ namespace Recipes.Models
                     .HasMaxLength(400)
                     .IsUnicode(false);
             });
+            modelBuilder.Entity<Skladiste>(entity =>
+            {
+                entity.ToTable("Skladiste");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.IspodMin)
+                    .IsRequired()
+                    .HasColumnName("ispod_min")
+                    .HasDefaultValueSql("((1))");
+
+                entity.Property(e => e.Kolicina)
+                    .HasColumnType("decimal(18, 0)")
+                    .HasColumnName("kolicina");
+
+                entity.Property(e => e.MinKolicina)
+                    .HasColumnType("decimal(18, 0)")
+                    .HasColumnName("min_kolicina");
+
+                entity.HasOne(d => d.FkNamirniceNavigation)
+                    .WithMany(p => p.Skladistes)
+                    .HasForeignKey(d => d.FkNamirnice)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Skladiste__FkNam__403A8C7D");
+            });
             modelBuilder.Entity<Ingredient>(entity =>
             {
                 entity.Property(e => e.Id).HasColumnName("id");
@@ -61,7 +87,7 @@ namespace Recipes.Models
                     .IsUnicode(false)
                     .HasColumnName("fk_naziv");
 
-                entity.HasOne(d => d.FkNazivNavigationId)
+                entity.HasOne(d => d.FkNazivNavigation)
                    .WithMany(p => p.Ingredients)
                    .HasForeignKey(d => d.FkNaziv)
                    .HasConstraintName("FK__Ingredien__fk_na__36B12243");
@@ -80,7 +106,11 @@ namespace Recipes.Models
                    
                     .HasName("PK__Recipes__085F53BB08D1C2E0");
                 entity.Property(e => e.RecipesId).HasColumnName("RecipesID");
-              
+                entity.Property(e => e.Descriptions)
+                    .HasMaxLength(500)
+                    .IsUnicode(false)
+                    .HasColumnName("descriptions");
+
                 entity.Property(e => e.ImageUrl)
                     .HasMaxLength(255)
                     .IsUnicode(false)
@@ -116,6 +146,8 @@ namespace Recipes.Models
                     .HasColumnName("JEDINICA_LONG");
             });
 
+
+            
             modelBuilder.Entity<Namirnice>(entity =>
             {
                 entity.ToTable("Namirnice");

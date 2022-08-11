@@ -57,47 +57,102 @@ namespace Recipes.Services
         }
 
 
-     
+
 
 
         public void DeleteRecipe(int id)
         {
             foreach (var ingredient in getById(id).Ingredients)
+            {
                 rc.Ingredients.Remove(ingredient);
+                Skladiste storage = rc.Skladistes.Where(o => o.FkNamirnice== ingredient.FkNaziv).First();
+                storage.Kolicina -= ingredient.Kolicina;
+                storage.IspodMin = storage.Kolicina < storage.MinKolicina;
+                rc.Skladistes.Update(storage);
+            }
 
             rc.Recipes.Remove(getById(id));
             rc.SaveChanges();
         }
 
+        //        public void post(Recipe recipe)
+        //        {
+
+        //            rc.Recipes.Add(recipe);
+        //            rc.SaveChanges();
+
+
+
+        ///*
+        //            foreach (var ingredient in recipe.Ingredients.ToArray())
+        //            {
+        //                ingredient.RecipesId = recipe.RecipesId;
+        //                rc1.Ingredients.Add(ingredient);
+        //                rc1.SaveChanges();
+
+        //            }
+        //*/
+
+
+
+
+        //        }
 
         public void post(Recipe recipe)
         {
+            Skladiste storage = new Skladiste();
             
+            foreach (var ingredient in recipe.Ingredients)
+            {
+                ingredient.FkNazivNavigation= rc1.Namirnices.Find(ingredient.Id);
+
+                //Update kolicinu u Skladistu
+                storage = rc.Skladistes.Where(o => o.FkNamirnice == ingredient.FkNaziv).First();
+                storage.Kolicina += ingredient.Kolicina;
+                storage.IspodMin = storage.Kolicina< storage.MinKolicina;
+                rc.Skladistes.Update(storage);
+            }
+
             rc.Recipes.Add(recipe);
             rc.SaveChanges();
-
-
-
-/*
-            foreach (var ingredient in recipe.Ingredients.ToArray())
-            {
-                ingredient.RecipesId = recipe.RecipesId;
-                rc1.Ingredients.Add(ingredient);
-                rc1.SaveChanges();
-
-            }
-*/
-            
-            
-            
-
         }
 
 
         public void edit(Recipe recipe)
         {
-            rc.Recipes.Update(recipe);
-            rc.SaveChanges();
+           
+            Recipe oldRecipe = getById(recipe.RecipesId);
+
+            //Remove old quantities
+            foreach (var ingredient in oldRecipe.Ingredients)
+            {
+                ingredient.FkNazivNavigation = rc1.Namirnices.Find(ingredient.FkNaziv);
+
+
+                Skladiste storage = rc1.Skladistes.Where(o => o.FkNamirnice == ingredient.FkNaziv).First();
+                storage.Kolicina -= ingredient.Kolicina;
+                storage.IspodMin = storage.Kolicina< storage.MinKolicina;
+                rc1.Skladistes.Update(storage);
+            }
+
+            //Add new quantities from recipe ingredient to storage
+            foreach (var ingredient in recipe.Ingredients)
+            {
+                ingredient. FkNazivNavigation = rc1.Namirnices.Find(ingredient.FkNaziv);
+
+                Skladiste storage = rc1.Skladistes.Where(o => o.FkNamirnice == ingredient.FkNaziv).First();
+                storage.Kolicina += ingredient.Kolicina;
+                storage.IspodMin = storage.Kolicina < storage.MinKolicina;
+                rc1.Skladistes.Update(storage);
+            }
+
+
+
+
+
+
+           rc1.Update(recipe);
+            rc1.SaveChanges();
         }
 
       

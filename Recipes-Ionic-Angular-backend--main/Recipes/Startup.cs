@@ -32,12 +32,15 @@ namespace Recipes
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-      
+            services.AddControllers().AddNewtonsoftJson(x =>x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
             services.AddScoped<RecipesInterface, RecipesService>();
             services.AddScoped<CategoryInterface,CategoryService>();
             services.AddScoped<IngredientsInterface, IngredientsServie>();
             services.AddScoped<MjerneJediniceInterface, MjerneJediniceService>();
             services.AddScoped<NamirniceInterface, NamirniceService>();
+            services.AddScoped<SkladisteInterface, SkladisteService>();
+            services.AddScoped<SkladisteUlazInterface, SkladisteUnosService>();
             services.AddSingleton<ILoggerFactory, LoggerFactory>();
             services.Configure<Recipe>(Configuration);
             services.AddDbContext<RecipeContext>(options => options.UseSqlServer(Configuration.GetConnectionString("RecipeURL")));
@@ -95,6 +98,7 @@ namespace Recipes
             app.UseRouting();
             app.UseCors();
             app.UseAuthorization();
+           
 
             app.UseEndpoints(endpoints =>
             {

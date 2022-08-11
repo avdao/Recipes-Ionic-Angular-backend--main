@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Recipes.Models;
 using Recipes.Services;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Recipes.Controllers
 {
@@ -41,10 +42,11 @@ namespace Recipes.Controllers
         [HttpPost]
         public void postData(Ingredient c)
         {
+            
             recipesService.post(c);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id1}")]
         public void edit(Ingredient c)
         {
             recipesService.edit(c);

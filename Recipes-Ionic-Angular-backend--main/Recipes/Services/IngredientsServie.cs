@@ -6,6 +6,7 @@ using Recipes.Models;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Recipes.Services
 {
@@ -24,14 +25,43 @@ namespace Recipes.Services
 
         public void deleteById(int id)
         {
-            rc.Ingredients.Remove(rc.Ingredients.Find(id));
+            Ingredient ingredient = getById(id)
+;
+            Skladiste storage = rc.Skladistes.Where(obj => obj.FkNamirnice == ingredient.FkNaziv).First();
+            storage.Kolicina -= ingredient.Kolicina;
+            storage.IspodMin= storage.Kolicina < storage.MinKolicina;
+            rc.Ingredients.Remove(ingredient);
             rc.SaveChanges();
-            
+
         }
 
-        public void edit(Ingredient c)
+        public Ingredient c123(int n)
         {
-            rc.Ingredients.Update(c);
+            return rc.Ingredients.Find(n);
+
+
+        }
+
+
+        public  void edit(Ingredient c)
+        {
+            Skladiste storage = new Skladiste();
+            int brojId = c.Id;
+            Ingredient c2 = c123(brojId);
+
+
+
+
+            decimal c3 = c2.Kolicina;
+                //Update kolicinu u Skladistu
+                storage = rc.Skladistes.Where(o => o.FkNamirnice == c.FkNaziv).First();
+                storage.Kolicina+= c.Kolicina - c3;
+            
+                storage.IspodMin = storage.Kolicina < storage.MinKolicina;
+                rc.Skladistes.Update(storage);
+
+            rc.Entry(c2).CurrentValues.SetValues(c);
+             //rc.Ingredients.Update(c);
             rc.SaveChanges();
         }
 
@@ -47,7 +77,7 @@ namespace Recipes.Services
 
         public void post(Ingredient c)
         {
-
+           
             rc.Ingredients.Add(c);
             rc.SaveChanges();
         }
