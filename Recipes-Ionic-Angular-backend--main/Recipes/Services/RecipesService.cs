@@ -120,8 +120,8 @@ namespace Recipes.Services
 
         public void edit(Recipe recipe)
         {
-           
-            Recipe oldRecipe = getById(recipe.RecipesId);
+
+            Recipe oldRecipe = rc.Recipes.Find(recipe.RecipesId);
 
             //Remove old quantities
             foreach (var ingredient in oldRecipe.Ingredients)

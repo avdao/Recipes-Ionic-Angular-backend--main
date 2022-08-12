@@ -169,6 +169,8 @@ namespace Recipes.Models
 
                 entity.Property(e => e.DatumUnosa).HasColumnType("datetime");
 
+                entity.Property(e => e.IspravkaKrivogUnosa).HasColumnName("ispravkaKrivogUnosa");
+
                 entity.Property(e => e.Kolicina)
                     .HasColumnType("decimal(18, 0)")
                     .HasColumnName("kolicina");

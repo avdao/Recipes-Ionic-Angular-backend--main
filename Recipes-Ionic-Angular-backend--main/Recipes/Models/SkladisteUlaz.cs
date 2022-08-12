@@ -11,6 +11,7 @@ namespace Recipes.Models
         public int FkNamirncie { get; set; }
         public decimal Kolicina { get; set; }
         public DateTime DatumUnosa { get; set; }
+        public bool IspravkaKrivogUnosa { get; set; }
 
         public virtual Namirnice FkNamirncieNavigation { get; set; }
     }

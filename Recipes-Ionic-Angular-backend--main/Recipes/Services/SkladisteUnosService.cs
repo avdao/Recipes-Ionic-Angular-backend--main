@@ -43,15 +43,27 @@ namespace Recipes.Services
 
         public void post(SkladisteUlaz s)
         {
-
-
-            Skladiste storage = rc1.Skladistes.Where(o => o.FkNamirnice == s.FkNamirncie).First();
-            storage.Kolicina+=s.Kolicina;
-            storage.IspodMin = storage.Kolicina < storage.MinKolicina;
-            rc1.Skladistes.Update(storage);
-            s.DatumUnosa = System.DateTime.Now;
-            rc1.SkladisteUlazs.Add(s);
-            rc1.SaveChanges();
+            if (s.IspravkaKrivogUnosa == false)
+            {
+                Skladiste storage = rc1.Skladistes.Where(o => o.FkNamirnice == s.FkNamirncie).First();
+                storage.Kolicina += s.Kolicina;
+                storage.IspodMin = storage.Kolicina < storage.MinKolicina;
+                rc1.Skladistes.Update(storage);
+                s.DatumUnosa = System.DateTime.Now;
+                rc1.SkladisteUlazs.Add(s);
+                rc1.SaveChanges();
+            }
+            else
+            {
+                Skladiste storage = rc1.Skladistes.Where(o => o.FkNamirnice == s.FkNamirncie).First();
+                storage.Kolicina -= s.Kolicina;
+                storage.IspodMin = storage.Kolicina < storage.MinKolicina;
+                rc1.Skladistes.Update(storage);
+                s.DatumUnosa = System.DateTime.Now;
+                rc1.SkladisteUlazs.Add(s);
+                rc1.SaveChanges();
+            }
+           
         }
 
         public string returnV(string data)
