@@ -25,7 +25,7 @@ namespace Recipes.Services
 
         public void deleteById(int id)
         {
-            Ingredient ingredient = getById(id)
+            Ingredient ingredient = rc.Ingredients.Find(id);
 ;
             Skladiste storage = rc.Skladistes.Where(obj => obj.FkNamirnice == ingredient.FkNaziv).First();
             storage.Kolicina -= ingredient.Kolicina;

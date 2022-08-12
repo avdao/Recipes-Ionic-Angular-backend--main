@@ -41,19 +41,19 @@ namespace Recipes.Services
 
         public void post(JObject data)
         {
+            Namirnice n = data["data"].ToObject<Namirnice>();
+            decimal minValue = data["minValue"].ToObject<decimal>();
+
+            Skladiste storage = new Skladiste();
+            storage.FkNamirniceNavigation= n;
+            storage.MinKolicina = minValue;
+            rc1.Skladistes.Add(storage);
 
 
-            Skladiste skladiste = new Skladiste
-            {
-                MinKolicina = data["minKolicina"].ToObject<decimal>(),
-                FkNamirniceNavigation = data["data"].ToObject<Namirnice>()
-            };
-           
 
 
-
-            rc1.Skladistes.Add(skladiste);
-            rc1.Namirnices.Add(data["data"].ToObject<Namirnice>());
+            rc1.Skladistes.Add(storage);
+            rc1.Namirnices.Add(n);
 
 
             rc1.SaveChanges();
